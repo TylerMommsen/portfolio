@@ -1,13 +1,19 @@
-import { useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
-const Contact = () => {
-	const [contactFormData, setContactFormData] = useState({
+interface ContactFormData {
+	email: string;
+	subject: string;
+	body: string;
+}
+
+const Contact: React.FC = () => {
+	const [contactFormData, setContactFormData] = useState<ContactFormData>({
 		email: '',
 		subject: '',
 		body: '',
 	});
 
-	const handleSubmit = (e) => {
+	const handleSubmit = (e: FormEvent) => {
 		e.preventDefault();
 
 		const { email, subject, body } = contactFormData;
@@ -15,7 +21,7 @@ const Contact = () => {
 		console.log(email, subject, body);
 	};
 
-	const handleInputChange = (e) => {
+	const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
 		const { id, value } = e.target;
 
 		setContactFormData({ ...contactFormData, [id]: value });
