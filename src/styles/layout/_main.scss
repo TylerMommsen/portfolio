@@ -1,3 +1,8 @@
+@import '../sections/hero';
+@import '../sections/about';
+@import '../sections/projects';
+@import '../sections/contact';
+
 main {
 	display: flex;
 	flex-direction: column;

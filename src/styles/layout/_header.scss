@@ -1,6 +1,7 @@
 header {
 	@include FlexCenter;
 	width: 100%;
+	padding: 1rem;
 
 	ul {
 		display: grid;

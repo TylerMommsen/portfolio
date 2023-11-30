@@ -1,9 +1,16 @@
+import Hero from '../sections/Hero';
+import Projects from '../sections/Projects';
+import About from '../sections/About';
+import Contact from '../sections/Contact';
+
 const Main = () => {
 	return (
 		<>
 			<main>
-				<h1>Tyler Mommsen</h1>
-				<h2>Full Stack Engineer</h2>
+				<Hero />
+				<About />
+				<Projects />
+				<Contact />
 			</main>
 		</>
 	);

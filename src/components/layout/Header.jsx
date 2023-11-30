@@ -3,8 +3,8 @@ const Header = () => {
 		<>
 			<header>
 				<ul>
-					<li>Projects</li>
 					<li>About</li>
+					<li>Projects</li>
 					<li>Contact</li>
 				</ul>
 			</header>
