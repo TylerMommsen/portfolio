@@ -1,0 +1,14 @@
+header {
+	@include FlexCenter;
+	width: 100%;
+
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+		text-decoration: none;
+		list-style: none;
+		width: 50%;
+		font-weight: bold;
+	}
+}
