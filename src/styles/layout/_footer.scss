@@ -2,8 +2,8 @@ footer {
 	@include FlexCenter;
 	display: flex;
 	gap: 1rem;
-	background-color: black;
-	color: white;
+	background-color: $primary-col;
+	color: $secondary-col;
 	padding: 0.8rem;
 
 	.github-icon {
