@@ -4,8 +4,21 @@
 @import '../sections/contact';
 
 main {
-	display: flex;
-	flex-direction: column;
 	background-color: $primary-col;
 	color: $secondary-col;
+	display: flex;
+	justify-content: center;
+
+	.sections {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 70%;
+		gap: 5rem;
+
+		.section-title {
+			font-size: 3rem;
+		}
+	}
 }

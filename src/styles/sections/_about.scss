@@ -1,5 +1,15 @@
 .about {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1rem;
+	width: 100%;
+
+	.about-text {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		// width: 75ch;
+		font-size: 1.5rem;
+	}
 }

@@ -2,39 +2,54 @@ const Projects = () => {
 	return (
 		<>
 			<div className="projects">
-				<h2>Projects</h2>
+				<h2 className="section-title">Projects</h2>
 				<div className="project">
-					<p>Placeholder</p>
+					<p className="project-img">Placeholder</p>
 					<div className="info">
-						<h3>Pathfinding Visualization</h3>
-						<p>description</p>
+						<h3 className="project-title">Pathfinding Visualization</h3>
+						<p className="project-description">
+							This is a visualization tool designed to demonstrate the inner workings of various
+							pathfinding algorithms as they navigate from point A to point B. Additionally, it
+							offers an engaging look at different maze generation algorithms and how they craft
+							intricate mazes. This interactive tool is crafted using HTML, SCSS, and JavaScript.
+							Feel free to explore and enjoy the experience!
+						</p>
+						<div className="tools-to-build-project">
+							<h4>Tools Used</h4>
+							<p>HTML</p>
+							<p>SCSS</p>
+							<p>Javascript</p>
+						</div>
 						<div className="links">
-							<a>Code</a>
+							<a>View Code</a>
 							<a>Live Preview</a>
 						</div>
 					</div>
 				</div>
 				<div className="project">
-					<p>Placeholder</p>
 					<div className="info">
-						<h3>Watch Store</h3>
-						<p>description</p>
+						<h3 className="project-title">Watch Store</h3>
+						<p className="project-description">
+							Time Crafted is a mockup e-commerce store that immerses you in the world of high-class
+							watches. Explore a curated collection of luxury timepieces, from timeless classics to
+							avant-garde horological masterpieces. Experience the art of precision engineering and
+							style at its finest.
+						</p>
+						<div className="tools-to-build-project">
+							<h4>Tools Used</h4>
+							<p>HTML</p>
+							<p>SCSS</p>
+							<p>TypeScript</p>
+							<p>React</p>
+							<p>NodeJS</p>
+							<p>Express</p>
+						</div>
 						<div className="links">
-							<a>Code</a>
+							<a href="https://github.com/TylerMommsen/watch-store">View Code</a>
 							<a>Live Preview</a>
 						</div>
 					</div>
-				</div>
-				<div className="project">
-					<p>Placeholder</p>
-					<div className="info">
-						<h3>Third Project</h3>
-						<p>Yet to be made</p>
-						<div className="links">
-							<a>Code</a>
-							<a>Live Preview</a>
-						</div>
-					</div>
+					<p className="project-img">Placeholder</p>
 				</div>
 			</div>
 		</>

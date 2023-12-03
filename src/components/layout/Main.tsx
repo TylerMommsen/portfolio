@@ -9,10 +9,12 @@ const Main = () => {
 		<>
 			<main>
 				<Bg />
-				<Hero />
-				<About />
-				<Projects />
-				<Contact />
+				<div className="sections">
+					<Hero />
+					<About />
+					<Projects />
+					<Contact />
+				</div>
 			</main>
 		</>
 	);
