@@ -27,6 +27,13 @@ header {
 			font-size: 1.5rem;
 			font-weight: bold;
 			color: $secondary-col;
+			border: none;
+			background-color: transparent;
+
+			&:hover {
+				background-color: transparent;
+				color: $secondary-col;
+			}
 
 			&::before {
 				content: '';

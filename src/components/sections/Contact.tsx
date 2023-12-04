@@ -1,27 +1,27 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 
 interface ContactFormData {
+	name: string;
 	email: string;
-	subject: string;
-	body: string;
+	message: string;
 }
 
 const Contact: React.FC = () => {
 	const [contactFormData, setContactFormData] = useState<ContactFormData>({
+		name: '',
 		email: '',
-		subject: '',
-		body: '',
+		message: '',
 	});
 
 	const handleSubmit = (e: FormEvent) => {
 		e.preventDefault();
 
-		const { email, subject, body } = contactFormData;
+		const { name, email, message } = contactFormData;
 
-		console.log(email, subject, body);
+		console.log(name, email, message);
 	};
 
-	const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+	const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 		const { id, value } = e.target;
 
 		setContactFormData({ ...contactFormData, [id]: value });
@@ -30,34 +30,42 @@ const Contact: React.FC = () => {
 	return (
 		<>
 			<div className="contact">
-				<h2>Contact</h2>
-				<p>Github:</p>
-				<p>LinkedIn:</p>
+				<h2 className="section-title">Contact</h2>
+				<div className="socials">
+					<img src="/github-icon.svg" id="github"></img>
+					<img src="/linkedin-icon.svg" id="linkedin"></img>
+				</div>
 
 				<p>Or email me directly:</p>
 				<form onSubmit={handleSubmit}>
+					<input
+						type="text"
+						id="name"
+						value={contactFormData.name}
+						onChange={handleInputChange}
+						placeholder="Name"
+						required
+					></input>
 					<input
 						type="email"
 						id="email"
 						value={contactFormData.email}
 						onChange={handleInputChange}
 						placeholder="Email"
+						required
 					></input>
-					<input
-						type="text"
-						id="subject"
-						value={contactFormData.subject}
+					<textarea
+						id="message"
+						value={contactFormData.message}
 						onChange={handleInputChange}
-						placeholder="Subject"
-					></input>
-					<input
-						type="text"
-						id="body"
-						value={contactFormData.body}
-						onChange={handleInputChange}
-						placeholder="Body"
-					></input>
-					<button type="submit">Send</button>
+						placeholder="Message"
+						rows={6}
+						style={{ resize: 'none' }}
+						required
+					></textarea>
+					<button type="submit" id="submit-btn">
+						Send
+					</button>
 				</form>
 			</div>
 		</>
