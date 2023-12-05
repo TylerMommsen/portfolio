@@ -3,7 +3,7 @@ $transition-duration: 0.5s;
 header {
 	@include FlexCenter;
 	padding: 1rem;
-	background-color: transparent;
+	background-color: $primary-col;
 	position: fixed;
 	z-index: 100;
 	width: 100%;
