@@ -40,8 +40,13 @@
 			}
 
 			.tools-to-build-project {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(1fr));
+				display: flex;
+				flex-direction: column;
+
+				.tools {
+					display: flex;
+					gap: 1rem;
+				}
 			}
 
 			.links {

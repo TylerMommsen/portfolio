@@ -16,9 +16,11 @@ const Projects = () => {
 						</p>
 						<div className="tools-to-build-project">
 							<h4>Tools Used</h4>
-							<p>HTML</p>
-							<p>SCSS</p>
-							<p>Javascript</p>
+							<div className="tools">
+								<img src="html-icon.svg" className="techstack-icon" />
+								<img src="sass-icon.svg" className="techstack-icon" />
+								<img src="javascript-icon.svg" className="techstack-icon" />
+							</div>
 						</div>
 						<div className="links">
 							<a>View Code</a>
@@ -37,12 +39,14 @@ const Projects = () => {
 						</p>
 						<div className="tools-to-build-project">
 							<h4>Tools Used</h4>
-							<p>HTML</p>
-							<p>SCSS</p>
-							<p>TypeScript</p>
-							<p>React</p>
-							<p>NodeJS</p>
-							<p>Express</p>
+							<div className="tools">
+								<img src="react-icon.svg" className="techstack-icon" />
+								<img src="typescript-icon.svg" className="techstack-icon" />
+								<img src="sass-icon.svg" className="techstack-icon" />
+								<img src="nodejs-icon.svg" className="techstack-icon" />
+								<img src="express-icon.svg" className="techstack-icon" />
+								<img src="mongodb-icon.png" className="techstack-icon" />
+							</div>
 						</div>
 						<div className="links">
 							<a href="https://github.com/TylerMommsen/watch-store">View Code</a>
