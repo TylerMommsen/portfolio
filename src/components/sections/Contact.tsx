@@ -32,8 +32,8 @@ const Contact: React.FC = () => {
 			<div className="contact">
 				<h2 className="section-title">Contact</h2>
 				<div className="socials">
-					<img src="/github-icon.svg" id="github"></img>
-					<img src="/linkedin-icon.svg" id="linkedin"></img>
+					<img src="github-icon.svg" id="github"></img>
+					<img src="linkedin-icon.svg" id="linkedin"></img>
 				</div>
 
 				<p>Or email me directly:</p>
