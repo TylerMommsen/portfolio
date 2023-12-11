@@ -23,8 +23,20 @@ const Projects = () => {
 							</div>
 						</div>
 						<div className="links">
-							<a>View Code</a>
-							<a>Live Preview</a>
+							<a
+								href="https://github.com/TylerMommsen/pathfinding-visualization"
+								target="_blank"
+								id="view-code-btn"
+							>
+								View Code
+							</a>
+							<a
+								href="https://tylermommsen.github.io/pathfinding-visualization/"
+								target="_blank"
+								id="live-preview-btn"
+							>
+								Live Preview
+							</a>
 						</div>
 					</div>
 				</div>
@@ -49,8 +61,14 @@ const Projects = () => {
 							</div>
 						</div>
 						<div className="links">
-							<a href="https://github.com/TylerMommsen/watch-store">View Code</a>
-							<a>Live Preview</a>
+							<a
+								href="https://github.com/TylerMommsen/watch-store"
+								target="_blank"
+								id="view-code-btn"
+							>
+								View Code
+							</a>
+							<a id="live-preview-btn">Live Preview</a>
 						</div>
 					</div>
 					<p className="project-img">Placeholder</p>

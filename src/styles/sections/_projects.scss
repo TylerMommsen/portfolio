@@ -54,6 +54,24 @@
 				justify-content: center;
 				gap: 1rem;
 				margin-top: auto;
+
+				#live-preview-btn {
+					padding: 0.5rem 1rem 0.5rem 1rem;
+					border-radius: 0.5rem;
+					background-color: green;
+					color: $secondary-col;
+					text-decoration: none;
+					cursor: pointer;
+				}
+
+				#view-code-btn {
+					padding: 0.5rem 1rem 0.5rem 1rem;
+					border-radius: 0.5rem;
+					background-color: $primary-col;
+					color: $secondary-col;
+					text-decoration: none;
+					cursor: pointer;
+				}
 			}
 		}
 	}
