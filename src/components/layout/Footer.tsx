@@ -4,7 +4,7 @@ const Footer = () => {
 			<footer>
 				<p>Copyright © 2023 Tyler Mommsen</p>
 				<a href="https://github.com/TylerMommsen/portfolio" target="_blank" rel="noreferrer">
-					<img className="github-icon" src="/github-icon.svg" />
+					<img className="github-icon" src="github-icon.svg" />
 				</a>
 			</footer>
 		</>
