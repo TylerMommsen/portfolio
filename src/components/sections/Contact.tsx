@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
 	return (
 		<>
 			<div className="contact">
-				<h2 className="section-title">Contact</h2>
+				<h2 className="section-title">Find Me</h2>
 				<div className="socials">
 					<img src="github-icon.svg" id="github"></img>
 					<img src="linkedin-icon.svg" id="linkedin"></img>

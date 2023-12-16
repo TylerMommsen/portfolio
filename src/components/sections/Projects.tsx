@@ -4,7 +4,7 @@ const Projects = () => {
 			<div className="projects">
 				<h2 className="section-title">Projects</h2>
 				<div className="project">
-					<p className="project-img">Placeholder</p>
+					<img src="display-algorithm.gif" className="project-img"></img>
 					<div className="info">
 						<h3 className="project-title">Pathfinding Visualization</h3>
 						<p className="project-description">
