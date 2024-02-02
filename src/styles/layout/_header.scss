@@ -1,30 +1,39 @@
 $transition-duration: 0.5s;
 
 header {
-	@include FlexCenter;
-	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
 	background-color: $primary-col;
 	position: fixed;
 	z-index: 100;
-	width: 100%;
+	width: 100vw;
 	transition: transform $transition-duration ease;
+	box-shadow: 0 1px 8px rgba($color: #3a3a3a, $alpha: 0.2);
 
 	&.hidden {
 		transform: translateY(-100%);
 	}
 
+	.name {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	#menu-icon {
+		filter: invert(1);
+		width: 2rem;
+	}
+
 	nav {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		text-align: center;
-		width: 50%;
+		display: none;
+		gap: 1rem;
 
 		button {
 			position: relative;
 			display: inline-block;
-			padding-bottom: 0.4rem;
-			margin-top: 0.4rem;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 			font-weight: bold;
 			color: $secondary-col;
 			border: none;

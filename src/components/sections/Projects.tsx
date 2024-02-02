@@ -56,7 +56,7 @@ const Projects = () => {
 								<img src="typescript-icon.svg" className="techstack-icon" />
 								<img src="sass-icon.svg" className="techstack-icon" />
 								<img src="nodejs-icon.svg" className="techstack-icon" />
-								<img src="express-icon.svg" className="techstack-icon" />
+								<img src="express-icon-black.svg" className="techstack-icon" />
 								<img src="mongodb-icon.png" className="techstack-icon" />
 							</div>
 						</div>

@@ -25,6 +25,8 @@ const Header = () => {
 	return (
 		<>
 			<header className={visible ? 'visible' : 'hidden'}>
+				<div className="name">Tyler Mommsen</div>
+				<img src="menu-icon.svg" id="menu-icon"></img>
 				<nav>
 					<button>About</button>
 					<button>Projects</button>

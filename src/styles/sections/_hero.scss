@@ -2,30 +2,47 @@
 	height: 100vh;
 
 	.info {
-		position: absolute;
-		left: 20%;
-		top: 30%;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		gap: 1rem;
-
-		.name {
-			font-size: 6rem;
-		}
+		width: 100%;
+		height: 100%;
 
 		.position {
 			font-size: 3rem;
-			margin-bottom: 3rem;
+			text-align: center;
+		}
+
+		.description {
+			font-size: 1.2rem;
+			text-align: center;
+		}
+
+		.contact-info {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+
+			#linkedin-icon {
+				width: 3.5rem;
+			}
+
+			#github-icon {
+				filter: invert(1);
+				width: 3rem;
+			}
 		}
 
 		.view-projects-btn {
-			color: white;
-			border: 1px solid white;
+			color: $secondary-col;
+			border: 1px solid $secondary-col;
 			border-radius: 5px;
-			padding: 1rem 1.4rem 1rem 1.4rem;
-			font-size: 2rem;
+			padding: 0.6rem 1rem 0.6rem 1rem;
+			font-size: 1.2rem;
 			transition: 0.3s;
-			width: 50%;
 
 			&:hover {
 				color: black;
