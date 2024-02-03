@@ -24,11 +24,34 @@ header {
 	#menu-icon {
 		filter: invert(1);
 		width: 2rem;
+		cursor: pointer;
 	}
 
 	nav {
-		display: none;
-		gap: 1rem;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		background-color: $primary-col;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		gap: 5rem;
+		padding-top: 50%;
+		z-index: 100;
+
+		&.open {
+			pointer-events: auto;
+		}
+
+		#exit-icon {
+			position: absolute;
+			top: 3%;
+			right: 10%;
+			z-index: 101;
+			width: 4rem;
+			cursor: pointer;
+		}
 
 		button {
 			position: relative;
@@ -66,7 +89,11 @@ header {
 @media only screen and (min-width: 768px) {
 	header {
 		nav {
-			display: flex;
+			flex-direction: row;
+			height: auto;
+			padding-top: 0;
+			position: relative;
+			width: auto;
 		}
 
 		#menu-icon {

@@ -10,6 +10,11 @@ body {
 	overflow-x: hidden;
 }
 
+body.menu-open {
+	pointer-events: none;
+	overflow: hidden;
+}
+
 button {
 	border: 1px solid $secondary-col;
 	color: $secondary-col;
