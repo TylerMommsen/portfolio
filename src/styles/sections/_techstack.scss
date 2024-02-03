@@ -2,42 +2,41 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
 	gap: 2rem;
-	background-color: $primary-col;
-	border: 1px solid $secondary-col;
-	border-radius: 1rem;
-	padding: 3rem;
-	z-index: 99;
+	background-color: $primary-col-2;
+	padding: 2rem 1rem 2rem 1rem;
+	width: 100%;
 
 	.sections {
 		display: flex;
-		gap: 1rem;
+		gap: 2rem;
 		width: 100%;
 
 		.techstack-section {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			gap: 0.5rem;
 
 			.techstack-title {
-				font-size: 2rem;
+				font-size: 1.2rem;
 			}
 
 			.list {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				gap: 1rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				place-items: center;
+				gap: 0.5rem;
 
 				.item {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					gap: 0.5rem;
 				}
 
 				.techstack-icon {
-					width: 6rem;
+					width: 4rem;
 					z-index: 99;
 				}
 

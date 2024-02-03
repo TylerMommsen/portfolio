@@ -6,6 +6,10 @@
 	font-family: sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 button {
 	border: 1px solid $secondary-col;
 	color: $secondary-col;

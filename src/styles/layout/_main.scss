@@ -5,8 +5,6 @@
 @import '../sections/contact';
 
 main {
-	background-color: $primary-col;
-	color: $secondary-col;
 	display: flex;
 	justify-content: center;
 
@@ -15,12 +13,11 @@ main {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 70%;
+		width: 100%;
 		height: 100%;
-		gap: 5rem;
 
 		.section-title {
-			font-size: 3rem;
+			font-size: 2rem;
 			justify-self: center;
 			align-self: center;
 		}

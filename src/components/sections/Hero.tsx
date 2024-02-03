@@ -10,8 +10,20 @@ const Hero = () => {
 						development.
 					</p>
 					<div className="contact-info">
-						<img src="linkedin-icon.svg" id="linkedin-icon"></img>
-						<img src="github-icon.svg" id="github-icon"></img>
+						<a
+							href="https://www.linkedin.com/in/tylermommsen/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								src="https://skillicons.dev/icons?i=linkedin"
+								id="linkedin-icon"
+								alt="LinkedIn"
+							></img>
+						</a>
+						<a href="https://github.com/TylerMommsen" target="_blank" rel="noopener noreferrer">
+							<img src="https://skillicons.dev/icons?i=github" id="github-icon" alt="GitHub"></img>
+						</a>
 					</div>
 					<button className="view-projects-btn">View Projects</button>
 				</div>
