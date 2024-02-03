@@ -2,49 +2,62 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 2rem;
 	width: 100%;
 	background-color: $primary-col-2;
 	padding: 2rem 1rem 2rem 1rem;
 
-	.socials {
+	.section {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+		gap: 2rem;
 
-		.socials-icons {
+		@media only screen and (min-width: 1200px) {
+			flex-direction: row;
+			gap: 5rem;
+		}
+
+		.socials {
 			display: flex;
-			gap: 1rem;
-			z-index: 1;
+			flex-direction: column;
+			gap: 0.5rem;
 			justify-content: center;
-			align-items: center;
 
-			a {
-				display: inline-block;
-				line-height: 0;
+			.socials-icons {
+				display: flex;
+				gap: 1rem;
+				z-index: 1;
+				justify-content: center;
+				align-items: center;
 
-				#github {
-					width: 100%;
-					height: auto;
-					cursor: pointer;
-				}
+				a {
+					display: inline-block;
+					line-height: 0;
 
-				#linkedin {
-					width: 100%;
-					height: auto;
-					cursor: pointer;
+					#github {
+						width: 100%;
+						height: auto;
+						cursor: pointer;
+					}
+
+					#linkedin {
+						width: 100%;
+						height: auto;
+						cursor: pointer;
+					}
 				}
 			}
 		}
-	}
 
-	.mail {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 0.5rem;
+		.mail {
+			display: flex;
+			flex-direction: column;
+			align-self: flex-start;
+			gap: 0.5rem;
+			height: 100%;
+		}
 	}
 }

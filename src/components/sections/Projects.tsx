@@ -1,12 +1,31 @@
+import { useEffect, useState } from 'react';
+
 const Projects = () => {
+	const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1200);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsSmallScreen(window.innerWidth < 1200);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	return (
 		<>
 			<div className="projects">
 				<h2 className="section-title">Projects</h2>
+				{!isSmallScreen ? <h3 className="project-title">Pathfinding Visualization</h3> : null}
 				<div className="project">
+					{!isSmallScreen ? <img src="display-algorithm.gif" className="project-img"></img> : null}
 					<div className="info">
-						<h3 className="project-title">Pathfinding Visualization</h3>
-						<img src="display-algorithm.gif" className="project-img"></img>
+						{isSmallScreen ? <h3 className="project-title">Pathfinding Visualization</h3> : null}
+
+						{isSmallScreen ? <img src="display-algorithm.gif" className="project-img"></img> : null}
 
 						<p className="project-description">
 							This is a visualization tool designed to demonstrate the inner workings of various
@@ -41,10 +60,9 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+				{!isSmallScreen ? <h3 className="project-title">Watch Store</h3> : null}
 				<div className="project">
 					<div className="info">
-						<h3 className="project-title">Watch Store</h3>
-						<p className="project-img">Placeholder</p>
 						<p className="project-description">
 							Time Crafted is a mockup e-commerce store that immerses you in the world of high-class
 							watches. Explore a curated collection of luxury timepieces, from timeless classics to
@@ -73,6 +91,7 @@ const Projects = () => {
 							<a id="live-preview-btn">Live Preview</a>
 						</div>
 					</div>
+					{!isSmallScreen ? <p className="project-img">Placeholder</p> : null}
 				</div>
 			</div>
 		</>
