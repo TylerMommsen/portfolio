@@ -55,30 +55,33 @@ const Header = () => {
 	return (
 		<>
 			<header className={visible ? 'visible' : 'hidden'}>
-				<div className="name">Tyler Mommsen</div>
-				{isSmallScreen ? (
-					<>
-						<img src="menu-icon.svg" id="menu-icon" onClick={openCloseMenu}></img>
-						{isMenuOpen ? (
-							<>
-								<nav className={isMenuOpen ? 'open' : ''}>
-									<img src="exit-icon.png" id="exit-icon" onClick={openCloseMenu}></img>
-									<button onClick={() => scrollToSection('about')}>About</button>
-									<button onClick={() => scrollToSection('projects')}>Projects</button>
-									<button onClick={() => scrollToSection('contact')}>Contact</button>
-								</nav>
-							</>
-						) : null}
-					</>
-				) : (
-					<>
-						<nav>
-							<button onClick={() => scrollToSection('about')}>About</button>
-							<button onClick={() => scrollToSection('projects')}>Projects</button>
-							<button onClick={() => scrollToSection('contact')}>Contact</button>
-						</nav>
-					</>
-				)}
+				<div className="container">
+					<div className="name">Tyler Mommsen</div>
+					{isSmallScreen ? (
+						<>
+							<img src="menu-icon.svg" id="menu-icon" onClick={openCloseMenu}></img>
+							{isMenuOpen ? (
+								<>
+									<nav className={isMenuOpen ? 'open' : ''}>
+										<img src="exit-icon.png" id="exit-icon" onClick={openCloseMenu}></img>
+										<button onClick={() => scrollToSection('about')}>About</button>
+										<button onClick={() => scrollToSection('projects')}>Projects</button>
+										<button onClick={() => scrollToSection('contact')}>Contact</button>
+									</nav>
+								</>
+							) : null}
+						</>
+					) : (
+						<>
+							<nav>
+								<button onClick={() => scrollToSection('about')}>Home</button>
+								<button onClick={() => scrollToSection('about')}>About</button>
+								<button onClick={() => scrollToSection('projects')}>Projects</button>
+								<button onClick={() => scrollToSection('contact')}>Contact</button>
+							</nav>
+						</>
+					)}
+				</div>
 			</header>
 		</>
 	);

@@ -1,23 +1,29 @@
 .about {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	gap: 2rem;
-	width: 96%;
+	width: 100%;
 	padding: 2rem 1rem 2rem 1rem;
 
-	.section-title {
-		font-size: 1rem;
-	}
-
-	.about-text {
-		text-align: center;
+	.about-container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		gap: 1.4rem;
-		font-size: 1.2rem;
-		color: $secondary-col-2;
+		max-width: 80rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		.section-title {
+			font-size: 1rem;
+		}
+
+		.about-text {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1.4rem;
+			font-size: 1.2rem;
+			color: $secondary-col-2;
+		}
 	}
 }
