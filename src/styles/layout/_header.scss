@@ -1,12 +1,9 @@
-$transition-duration: 0.5s;
-
 header {
 	padding: 2rem;
 	background-color: $primary-col;
 	position: fixed;
 	z-index: 100;
 	width: 100vw;
-	transition: transform $transition-duration ease;
 	box-shadow: 0 1px 8px rgba($color: #3a3a3a, $alpha: 0.2);
 
 	.container {
@@ -16,10 +13,6 @@ header {
 		max-width: 80rem;
 		margin-left: auto;
 		margin-right: auto;
-
-		&.hidden {
-			transform: translateY(-100%);
-		}
 
 		.name {
 			font-size: 1.2rem;
