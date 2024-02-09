@@ -4,11 +4,11 @@ const Header = () => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+	const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1200);
 
 	useEffect(() => {
 		const handleResize = () => {
-			setIsSmallScreen(window.innerWidth < 768);
+			setIsSmallScreen(window.innerWidth < 1200);
 		};
 
 		window.addEventListener('resize', handleResize);
@@ -17,26 +17,6 @@ const Header = () => {
 			window.removeEventListener('resize', handleResize);
 		};
 	}, []);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			const currentScrollPos = window.scrollY;
-			const isScrollingUp = prevScrollPos > currentScrollPos;
-
-			setPrevScrollPos(currentScrollPos);
-
-			// Set the visibility based on the scroll direction
-			setVisible((prevVisible) => (isScrollingUp || currentScrollPos < 10 ? true : false));
-		};
-
-		if (!isMenuOpen) {
-			window.addEventListener('scroll', handleScroll);
-		}
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, [prevScrollPos]);
 
 	const scrollToSection = (sectionClass: string) => {
 		if (isMenuOpen) openCloseMenu();
@@ -54,7 +34,7 @@ const Header = () => {
 
 	return (
 		<>
-			<header className={visible ? 'visible' : 'hidden'}>
+			<header>
 				<div className="container">
 					<div className="name">Tyler Mommsen</div>
 					{isSmallScreen ? (

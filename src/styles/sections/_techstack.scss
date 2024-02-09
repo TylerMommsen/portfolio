@@ -22,9 +22,16 @@
 				font-size: 1.2rem;
 			}
 
+			#frontend-skills {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+
+			#extra-skills {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
 			.list {
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
 				place-items: center;
 				gap: 0.5rem;
 

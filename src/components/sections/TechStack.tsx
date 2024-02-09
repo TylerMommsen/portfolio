@@ -7,7 +7,7 @@ const TechStack = () => {
 				<div className="sections">
 					<div className="techstack-section">
 						<h3 className="techstack-title">Frontend</h3>
-						<div className="list">
+						<div id="frontend-skills" className="list">
 							<div className="item">
 								<img src="https://skillicons.dev/icons?i=html" className="techstack-icon" />
 								<p className="techstack-item-name">HTML</p>
@@ -32,30 +32,20 @@ const TechStack = () => {
 								<img src="https://skillicons.dev/icons?i=ts" className="techstack-icon" />
 								<p className="techstack-item-name">TypeScript</p>
 							</div>
-						</div>
-					</div>
-
-					<div className="techstack-section">
-						<h3 className="techstack-title">Backend</h3>
-						<div className="list">
 							<div className="item">
-								<img src="https://skillicons.dev/icons?i=nodejs" className="techstack-icon" />
-								<p className="techstack-item-name">NodeJS</p>
+								<img src="https://skillicons.dev/icons?i=nextjs" className="techstack-icon" />
+								<p className="techstack-item-name">Next.js</p>
 							</div>
 							<div className="item">
-								<img src="https://skillicons.dev/icons?i=express" className="techstack-icon" />
-								<p className="techstack-item-name">Express</p>
-							</div>
-							<div className="item">
-								<img src="https://skillicons.dev/icons?i=mongodb" className="techstack-icon" />
-								<p className="techstack-item-name">MongoDB</p>
+								<img src="https://skillicons.dev/icons?i=tailwind" className="techstack-icon" />
+								<p className="techstack-item-name">Tailwind</p>
 							</div>
 						</div>
 					</div>
 
 					<div className="techstack-section">
-						<h3 className="techstack-title">Tools</h3>
-						<div className="list">
+						<h3 className="techstack-title">Extra Skills</h3>
+						<div id="extra-skills" className="list">
 							<div className="item">
 								<img src="https://skillicons.dev/icons?i=webpack" className="techstack-icon" />
 								<p className="techstack-item-name">Webpack</p>
@@ -67,6 +57,18 @@ const TechStack = () => {
 							<div className="item">
 								<img src="https://skillicons.dev/icons?i=linux" className="techstack-icon" />
 								<p className="techstack-item-name">Linux</p>
+							</div>
+							<div className="item">
+								<img src="https://skillicons.dev/icons?i=nodejs" className="techstack-icon" />
+								<p className="techstack-item-name">NodeJS</p>
+							</div>
+							<div className="item">
+								<img src="https://skillicons.dev/icons?i=express" className="techstack-icon" />
+								<p className="techstack-item-name">Express</p>
+							</div>
+							<div className="item">
+								<img src="https://skillicons.dev/icons?i=mongodb" className="techstack-icon" />
+								<p className="techstack-item-name">MongoDB</p>
 							</div>
 						</div>
 					</div>

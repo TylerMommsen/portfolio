@@ -59,9 +59,14 @@ const Projects = () => {
 						</div>
 					</div>
 
+					<hr style={{ width: '100%' }}></hr>
+
 					<div className="project">
+						{isSmallScreen ? (
+							<img src="TimeCraftedPreview.png" className="project-img"></img>
+						) : null}
 						<div className="info">
-							{!isSmallScreen ? <h3 className="project-title">Time Crafted</h3> : null}
+							<h3 className="project-title">Time Crafted</h3>
 							<p className="project-description">
 								Time Crafted is a mockup e-commerce store that immerses you in the world of
 								high-class watches. Explore a curated collection of luxury timepieces, from timeless
@@ -90,13 +95,17 @@ const Projects = () => {
 								<a id="live-preview-btn">Live Preview</a>
 							</div>
 						</div>
-						{!isSmallScreen ? <p className="project-img">Placeholder</p> : null}
+						{!isSmallScreen ? (
+							<img src="TimeCraftedPreview.png" className="project-img"></img>
+						) : null}
 					</div>
 
+					<hr style={{ width: '100%' }}></hr>
+
 					<div className="project">
-						{!isSmallScreen ? <p className="project-img">Placeholder</p> : null}
+						<img src="CryptoCovePreview.png" className="project-img"></img>
 						<div className="info">
-							{!isSmallScreen ? <h3 className="project-title">CryptoCove</h3> : null}
+							<h3 className="project-title">CryptoCove</h3>
 							<p className="project-description">
 								CryptoCove is a mockup crypto exchange site. Explore a curated collection of luxury
 								timepieces, from timeless classics to avant-garde horological masterpieces.
