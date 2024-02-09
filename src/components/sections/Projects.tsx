@@ -26,11 +26,9 @@ const Projects = () => {
 						<div className="info">
 							<h3 className="project-title">Pathfinding Visualization</h3>
 							<p className="project-description">
-								This is a visualization tool designed to demonstrate the inner workings of various
-								pathfinding algorithms as they navigate from point A to point B. Additionally, it
-								offers an engaging look at different maze generation algorithms and how they craft
-								intricate mazes. This interactive tool is crafted using HTML, SCSS, and JavaScript.
-								Feel free to explore and enjoy the experience!
+								Pathfinding visualization tool designed to demonstrate various pathfinding
+								algorithms as they navigate from point A to point B. It also offers an engaging look
+								at different maze generation algorithms and how they craft intricate mazes.
 							</p>
 							<div className="tools-to-build-project">
 								<h4>Tools Used</h4>
@@ -92,7 +90,13 @@ const Projects = () => {
 								>
 									View Code
 								</a>
-								<a id="live-preview-btn">Live Preview</a>
+								<a
+									href="https://tylermommsen-watchstore.netlify.app"
+									target="_blank"
+									id="live-preview-btn"
+								>
+									Live Preview
+								</a>
 							</div>
 						</div>
 						{!isSmallScreen ? (
@@ -107,9 +111,8 @@ const Projects = () => {
 						<div className="info">
 							<h3 className="project-title">CryptoCove</h3>
 							<p className="project-description">
-								CryptoCove is a mockup crypto exchange site. Explore a curated collection of luxury
-								timepieces, from timeless classics to avant-garde horological masterpieces.
-								Experience the art of precision engineering and style at its finest.
+								CryptoCove is a mockup crypto exchange site. View real-time crypto market updates
+								for the top 50 cryptocoins. Used CoinGecko's API to fetch latest data.
 							</p>
 							<div className="tools-to-build-project">
 								<h4>Tools Used</h4>
@@ -121,13 +124,15 @@ const Projects = () => {
 							</div>
 							<div className="links">
 								<a
-									href="https://github.com/TylerMommsen/watch-store"
+									href="https://github.com/TylerMommsen/cryptocove"
 									target="_blank"
 									id="view-code-btn"
 								>
 									View Code
 								</a>
-								<a id="live-preview-btn">Live Preview</a>
+								<a href="https://cryptocove.vercel.app/" target="_blank" id="live-preview-btn">
+									Live Preview
+								</a>
 							</div>
 						</div>
 					</div>

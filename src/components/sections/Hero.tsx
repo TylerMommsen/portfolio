@@ -1,4 +1,12 @@
 const Hero = () => {
+	const scrollToSection = (sectionClass: string) => {
+		const section = document.getElementsByClassName(sectionClass);
+
+		if (section.length > 0) {
+			section[0].scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
 	return (
 		<>
 			<div className="hero">
@@ -30,7 +38,9 @@ const Hero = () => {
 								></img>
 							</a>
 						</div>
-						<button className="view-projects-btn">View Projects</button>
+						<button className="view-projects-btn" onClick={() => scrollToSection('projects')}>
+							View Projects
+						</button>
 					</div>
 				</div>
 			</div>
