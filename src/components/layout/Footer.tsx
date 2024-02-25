@@ -18,7 +18,7 @@ const Footer = () => {
 
 	return (
 		<>
-			<footer>
+			<footer className="bg-background grid place-items-center text-primary p-2">
 				<p>Copyright © {currentYear} Tyler Mommsen</p>
 			</footer>
 		</>

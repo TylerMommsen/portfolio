@@ -4,9 +4,63 @@
 
 @layer base {
 	:root {
-		--background: rgb(15, 15, 15);
-		--primary: rgb(242, 242, 242);
+		--background: rgb(10, 10, 10);
+
+		--primary: rgb(240, 240, 240);
+		--primary2: rgb(106, 106, 106);
 		--secondary: rgb(38, 38, 38);
-		--accent: rgb(242, 242, 242);
+		--secondary2: rgb(28, 28, 28);
+		--tertiary: rgb(15 23 42);
+		--accent: rgb(0, 122, 204);
+		--accent-shadow: rgba(0, 122, 204, 0.7);
+		--accent2: rgb(0, 102, 171);
+		--accent3: rgb(0, 89, 148);
 	}
+}
+
+/* Gradient text for hero section */
+.gradient-text {
+	background: linear-gradient(
+		to right,
+		var(--accent),
+		var(--accent2),
+		var(--accent3),
+		var(--accent2),
+		var(--accent),
+		var(--accent2),
+		var(--accent3)
+	);
+	background-size: 300% 300%;
+	background-clip: text;
+}
+
+/* Custom Scrollbar Styles */
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary) var(--secondary);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 12px; /* Adjust scrollbar thickness */
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--secondary); /* Scrollbar track color */
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--primary); /* Scrollbar handle color */
+	border-radius: var(--radius); /* Scrollbar handle border radius */
+	border: 3px solid var(--secondary); /* Creates padding around the scrollbar handle */
+}
+
+/* Optional: Styles for scrollbar corner and scrollbar button (arrows) */
+*::-webkit-scrollbar-corner {
+	background: var(--secondary);
+}
+
+*::-webkit-scrollbar-button {
+	display: none; /* Hides scrollbar buttons */
 }
