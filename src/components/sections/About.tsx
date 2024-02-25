@@ -8,8 +8,8 @@ export default function About() {
 			id="about"
 			className="bg-background w-full grid place-items-center text-primary py-12 px-4"
 		>
-			<div className="max-w-7xl w-full gap-4 lg:gap-12 grid lg:grid-cols-2 place-items-center">
-				<div className="h-full grid place-items-center place-self-end justify-items-end aspect-square w-full">
+			<div className="max-w-7xl w-full lg:gap-12 grid lg:grid-cols-2 place-items-center">
+				<div className="h-full grid place-items-center place-self-end lg:justify-items-end aspect-square w-full">
 					<Image
 						src={'/tyler-mommsen-photo.jpg'}
 						width={1000}
