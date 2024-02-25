@@ -96,7 +96,7 @@ const techStackIcons = [
 export default function Hero() {
 	return (
 		<>
-			<div className="grid place-items-center w-screen min-h-screen">
+			<section className="grid place-items-center w-screen min-h-screen">
 				<div className="h-full w-full bg-background bg-dot-white/[0.2] relative flex items-center justify-center">
 					{/* Radial gradient for the container to give a faded look */}
 					<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -127,7 +127,7 @@ export default function Hero() {
 						</Button>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 }
