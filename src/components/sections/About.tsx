@@ -8,14 +8,14 @@ export default function About() {
 			id="about"
 			className="bg-background w-full grid place-items-center text-primary py-12 px-4"
 		>
-			<div className="max-w-7xl w-full gap-4 lg:gap-20 grid lg:grid-cols-2 place-items-center">
-				<div className="h-full lg:place-self-end">
+			<div className="max-w-7xl w-full gap-4 lg:gap-12 grid lg:grid-cols-2 place-items-center">
+				<div className="h-full grid place-items-center place-self-end justify-items-end aspect-square w-full">
 					<Image
 						src={'/tyler-mommsen-photo.jpg'}
-						width={400}
-						height={400}
-						alt="tyler mommsen personal photo"
-						className="rounded-2xl"
+						width={1000}
+						height={1000}
+						alt="Tyler Mommsen personal photo"
+						className="rounded-2xl object-cover h-[75%] w-[75%]"
 					/>
 				</div>
 
@@ -24,7 +24,7 @@ export default function About() {
 					<p className="max-w-[45ch] leading-6 text-center lg:text-start">
 						Hey there! My name is Tyler Mommsen, I&apos;m a passionate Frontend Developer. My main
 						stack focuses on React/Next.js with Tailwind and TypeScript, but I always love learning
-						new technology. <br /> <br /> Thank you for visiting my portfolio, enjoy the projects!
+						new technologies. <br /> <br /> Thank you for visiting my portfolio, enjoy the projects!
 					</p>
 
 					<div className="mt-4">
