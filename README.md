@@ -1,7 +1,10 @@
 # Portfolio
 
-## Built With
+## Demo
+[Live](https://www.tylermommsen.com)
 
+## Built With
+- Next.js
 - React
 - TypeScript
-- SCSS
+- Tailwind
