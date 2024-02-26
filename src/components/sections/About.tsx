@@ -3,6 +3,12 @@ import { Button } from '../ui/moving-border';
 import Image from 'next/image';
 
 export default function About() {
+	const scrollToContact = () => {
+		const contactSection = document.getElementById('contact');
+		if (contactSection) {
+			contactSection.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<section
 			id="about"
@@ -27,7 +33,7 @@ export default function About() {
 						new technologies. <br /> <br /> Thank you for visiting my portfolio, enjoy the projects!
 					</p>
 
-					<div className="mt-4">
+					<div className="mt-4" onClick={scrollToContact}>
 						<Button borderRadius="1rem" className="font-bold px-8 py-4">
 							Contact
 						</Button>

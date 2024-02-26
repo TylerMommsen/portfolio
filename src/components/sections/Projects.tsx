@@ -3,7 +3,7 @@ import Project from '../Project';
 
 export default function Projects() {
 	return (
-		<section className="w-full bg-background py-12 px-4 grid place-items-center">
+		<section id="projects" className="w-full bg-background py-12 px-4 grid place-items-center">
 			<div className="max-w-7xl text-primary flex flex-col gap-8 items-center w-full">
 				<h2 className="text-2xl font-bold text-primary2">Projects</h2>
 				<Project

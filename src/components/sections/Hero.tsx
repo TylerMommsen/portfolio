@@ -94,6 +94,13 @@ const techStackIcons = [
 ];
 
 export default function Hero() {
+	const scrollToProjects = () => {
+		const projectsSection = document.getElementById('projects');
+		if (projectsSection) {
+			projectsSection.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
 	return (
 		<>
 			<section className="grid place-items-center w-screen min-h-screen">
@@ -127,9 +134,11 @@ export default function Hero() {
 							/>
 						</div>
 
-						<Button borderRadius="1rem" className="font-bold px-8 py-4">
-							View Projects
-						</Button>
+						<div onClick={scrollToProjects}>
+							<Button borderRadius="1rem" className="font-bold px-8 py-4">
+								View Projects
+							</Button>
+						</div>
 					</div>
 				</div>
 			</section>
