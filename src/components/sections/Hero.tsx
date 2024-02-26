@@ -108,7 +108,12 @@ export default function Hero() {
 							</h2>
 							<h1 className="text-6xl font-bold relative z-20 text-primary">
 								Frontend{' '}
-								<span className="gradient-text text-transparent animate-gradientText">React</span>{' '}
+								<span
+									className="gradient-text text-transparent animate-gradientText"
+									style={{ backgroundClip: 'text' }}
+								>
+									React
+								</span>{' '}
 								Developer
 							</h1>
 						</div>

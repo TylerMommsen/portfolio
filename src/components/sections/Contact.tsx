@@ -22,7 +22,7 @@ export default function Contact() {
 						/>
 					</a>
 					<a
-						href="https://linkedin.com/TylerMommsen"
+						href="https://www.linkedin.com/in/tylermommsen/"
 						target="_blank"
 						rel="noreferrer noopener"
 						className="hover:-translate-y-2 transform transition duration-300 hover:shadow-md"

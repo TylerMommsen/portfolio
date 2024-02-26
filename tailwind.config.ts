@@ -34,6 +34,7 @@ const config = {
 				primary2: 'var(--primary2)',
 				secondary: 'var(--secondary)',
 				secondary2: 'var(--secondary2)',
+				tertiary: 'var(--tertiary)',
 				accent: 'var(--accent)',
 				accent2: 'var(--accent2)',
 				accent3: 'var(--accent3)',

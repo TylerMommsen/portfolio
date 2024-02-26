@@ -12,6 +12,7 @@ interface ProjectProps {
 	name: string;
 	description: string;
 	images: string[];
+	techStack: string[];
 	links: {
 		name: string;
 		link: string;
@@ -23,6 +24,7 @@ export default function Project({
 	name,
 	description,
 	images,
+	techStack,
 	links,
 	flipToLeft = false,
 }: ProjectProps) {
@@ -34,21 +36,41 @@ export default function Project({
 				<h3 className="font-bold text-xl">{name}</h3>
 				<p className="leading-6 max-w-[45ch]">{description}</p>
 
-				<div className="flex justify-center gap-2 mt-1">
-					{links.map((link, index) => {
-						const linkTo = link.name;
+				<div className="flex gap-2">
+					{techStack.map((name, index) => {
 						return (
-							<a
+							<Image
 								key={index}
-								href={`${link.link}`}
-								target="_blank"
-								rel="noreferrer noopener"
-								className={`${linkTo === 'Repo' ? 'from-accent to-accent3' : 'from-green-500 to-green-700'} bg-gradient-to-b font-bold text-primary px-6 py-2 rounded-xl`}
-							>
-								{linkTo}
-							</a>
+								src={`https://skillicons.dev/icons?i=${name}`}
+								width={60}
+								height={60}
+								alt={name + 'icon'}
+							/>
 						);
 					})}
+				</div>
+
+				<div className="flex justify-center gap-2 mt-1">
+					<a
+						href={links[0].link}
+						target="_blank"
+						rel="noreferrer noopener"
+						className="relative inline-flex overflow-hidden font-bold text-primary p-[1px] rounded-xl hover:-translate-y-2 transform transition duration-300 hover:shadow-md"
+					>
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--accent)_0%,var(--accent3)_50%,var(--accent)_100%)]" />
+						<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-6 py-2 text-sm text-white backdrop-blur-3xl">
+							{links[0].name}
+						</span>
+					</a>
+
+					<a
+						href={links[1].link}
+						target="_blank"
+						rel="noreferrer noopener"
+						className="font-bold text-primary px-6 py-2 gradient-text animate-gradientText rounded-xl hover:-translate-y-2 transform transition duration-300 hover:shadow-md"
+					>
+						{links[1].name}
+					</a>
 				</div>
 			</div>
 
@@ -82,21 +104,41 @@ export default function Project({
 				<h3 className="font-bold text-xl">{name}</h3>
 				<p className="leading-6 max-w-[45ch]">{description}</p>
 
-				<div className="flex justify-center gap-2 mt-1">
-					{links.map((link, index) => {
-						const linkTo = link.name;
+				<div className="flex gap-2">
+					{techStack.map((name, index) => {
 						return (
-							<a
+							<Image
 								key={index}
-								href={`${link.link}`}
-								target="_blank"
-								rel="noreferrer noopener"
-								className={`${linkTo === 'Repo' ? 'from-accent to-accent3' : 'from-green-500 to-green-700'} bg-gradient-to-b font-bold text-primary px-6 py-2 rounded-xl`}
-							>
-								{linkTo}
-							</a>
+								src={`https://skillicons.dev/icons?i=${name}`}
+								width={60}
+								height={60}
+								alt={name + 'icon'}
+							/>
 						);
 					})}
+				</div>
+
+				<div className="flex justify-center gap-2 mt-1">
+					<a
+						href={links[0].link}
+						target="_blank"
+						rel="noreferrer noopener"
+						className="relative inline-flex overflow-hidden font-bold text-primary p-[1px] rounded-xl hover:-translate-y-2 transform transition duration-300 hover:shadow-md"
+					>
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--accent)_0%,var(--accent3)_50%,var(--accent)_100%)]" />
+						<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-6 py-2 text-sm text-white backdrop-blur-3xl">
+							{links[0].name}
+						</span>
+					</a>
+
+					<a
+						href={links[1].link}
+						target="_blank"
+						rel="noreferrer noopener"
+						className="font-bold text-primary px-6 py-2 gradient-text animate-gradientText rounded-xl hover:-translate-y-2 transform transition duration-300 hover:shadow-md"
+					>
+						{links[1].name}
+					</a>
 				</div>
 			</div>
 		</div>
