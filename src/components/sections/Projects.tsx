@@ -9,11 +9,17 @@ export default function Projects() {
 				<Project
 					name="CryptoCove"
 					description="CryptoCove is a mockup crypto exchange site. View real-time crypto market updates for the top 50 cryptocoins. Used CoinGecko's API to fetch latest data."
-					images={['/CryptoCovePreview.png']}
+					images={[
+						'/projects/cryptocove/cryptocove1.png',
+						'/projects/cryptocove/cryptocove2.png',
+						'/projects/cryptocove/cryptocove3.png',
+						'/projects/cryptocove/cryptocove4.png',
+						'/projects/cryptocove/cryptocove5.png',
+					]}
 					techStack={['nextjs', 'react', 'ts', 'tailwind']}
 					links={[
-						{ name: 'Repo', link: '/' },
-						{ name: 'Live', link: '/' },
+						{ name: 'Repo', link: 'https://github.com/TylerMommsen/cryptocove' },
+						{ name: 'Live', link: 'https://tylermommsen-cryptocove.vercel.app/' },
 					]}
 				/>
 
@@ -23,8 +29,8 @@ export default function Projects() {
 					images={['/display-algorithm.gif']}
 					techStack={['html', 'sass', 'javascript']}
 					links={[
-						{ name: 'Repo', link: '/' },
-						{ name: 'Live', link: '/' },
+						{ name: 'Repo', link: 'https://github.com/TylerMommsen/pathfinding-visualization' },
+						{ name: 'Live', link: 'https://tylermommsen.github.io/pathfinding-visualization/' },
 					]}
 					flipToLeft={true}
 				/>
@@ -32,11 +38,11 @@ export default function Projects() {
 				<Project
 					name="GameVault"
 					description="GameVault is a Game Catalog site which is the ultimate destination for exploring a vast collection of over 800,000 games. All data is fetched using RAWG API to provide comprehensive information, including descriptions, ratings, metacritic scores, publishers, developers and much more!"
-					images={['/display-algorithm.gif']}
+					images={['/projects/gamevault/gamevault1.png', '/projects/gamevault/gamevault2.png']}
 					techStack={['nextjs', 'react', 'ts', 'tailwind']}
 					links={[
-						{ name: 'Repo', link: '/' },
-						{ name: 'Live', link: '/' },
+						{ name: 'Repo', link: 'https://github.com/TylerMommsen/gamevault' },
+						{ name: 'Live', link: 'https://tylermommsen-gamevault.vercel.app/' },
 					]}
 				/>
 
@@ -46,8 +52,8 @@ export default function Projects() {
 					images={['/TimeCraftedPreview.png']}
 					techStack={['react', 'ts', 'sass', 'nodejs', 'express', 'mongodb']}
 					links={[
-						{ name: 'Repo', link: '/' },
-						{ name: 'Live', link: '/' },
+						{ name: 'Repo', link: 'https://github.com/TylerMommsen/time-crafted' },
+						{ name: 'Live', link: 'https://tylermommsen-watchstore.netlify.app' },
 					]}
 					flipToLeft={true}
 				/>

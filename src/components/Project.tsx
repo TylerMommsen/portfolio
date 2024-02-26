@@ -1,4 +1,5 @@
 import React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import {
 	Carousel,
 	CarouselContent,
@@ -28,6 +29,8 @@ export default function Project({
 	links,
 	flipToLeft = false,
 }: ProjectProps) {
+	const plugin = React.useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
+
 	return (
 		<div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-2 gap-4 lg:gap-12">
 			<div
@@ -75,7 +78,11 @@ export default function Project({
 			</div>
 
 			<div>
-				<Carousel>
+				<Carousel
+					plugins={[plugin.current]}
+					onMouseEnter={plugin.current.stop}
+					onMouseLeave={plugin.current.reset}
+				>
 					<CarouselContent>
 						{images.map((image, index) => {
 							return (
