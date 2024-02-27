@@ -9,6 +9,8 @@ import {
 } from '@/components/ui/carousel';
 import Image from 'next/image';
 
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+
 interface ProjectProps {
 	name: string;
 	description: string;
@@ -41,14 +43,26 @@ export default function Project({
 
 				<div className="flex gap-2">
 					{techStack.map((name, index) => {
+						const nameFormatted = (string: string) =>
+							string.charAt(0).toUpperCase() + string.slice(1);
 						return (
-							<Image
-								key={index}
-								src={`https://skillicons.dev/icons?i=${name}`}
-								width={60}
-								height={60}
-								alt={name + 'icon'}
-							/>
+							<TooltipProvider key={index}>
+								<Tooltip>
+									<TooltipTrigger>
+										<Image
+											key={index}
+											src={`https://skillicons.dev/icons?i=${name}`}
+											width={60}
+											height={60}
+											alt={name + 'icon'}
+											draggable={false}
+										/>
+									</TooltipTrigger>
+									<TooltipContent className="bg-primary text-secondary">
+										{nameFormatted(name)}
+									</TooltipContent>
+								</Tooltip>
+							</TooltipProvider>
 						);
 					})}
 				</div>
@@ -113,14 +127,26 @@ export default function Project({
 
 				<div className="flex gap-2">
 					{techStack.map((name, index) => {
+						const nameFormatted = (string: string) =>
+							string.charAt(0).toUpperCase() + string.slice(1);
 						return (
-							<Image
-								key={index}
-								src={`https://skillicons.dev/icons?i=${name}`}
-								width={60}
-								height={60}
-								alt={name + 'icon'}
-							/>
+							<TooltipProvider key={index}>
+								<Tooltip>
+									<TooltipTrigger>
+										<Image
+											key={index}
+											src={`https://skillicons.dev/icons?i=${name}`}
+											width={60}
+											height={60}
+											alt={name + 'icon'}
+											draggable={false}
+										/>
+									</TooltipTrigger>
+									<TooltipContent className="bg-primary text-secondary">
+										{nameFormatted(name)}
+									</TooltipContent>
+								</Tooltip>
+							</TooltipProvider>
 						);
 					})}
 				</div>

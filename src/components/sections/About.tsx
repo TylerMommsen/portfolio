@@ -14,14 +14,14 @@ export default function About() {
 			id="about"
 			className="bg-background w-full grid place-items-center text-primary py-12 px-4"
 		>
-			<div className="max-w-7xl w-full lg:gap-12 grid lg:grid-cols-2 place-items-center">
-				<div className="h-full grid place-items-center place-self-end lg:justify-items-end aspect-square w-full">
+			<div className="max-w-7xl w-full gap-4 lg:gap-12 grid lg:grid-cols-2 place-items-center">
+				<div className="h-full grid items-end justify-items-center lg:items-center lg:justify-items-end aspect-square w-full">
 					<Image
 						src={'/tyler-mommsen-photo.jpg'}
 						width={1000}
 						height={1000}
 						alt="Tyler Mommsen personal photo"
-						className="rounded-2xl object-cover h-[75%] w-[75%]"
+						className="rounded-2xl object-cover h-[50%] w-[50%] lg:h-[75%] lg:w-[75%]"
 					/>
 				</div>
 
@@ -33,8 +33,8 @@ export default function About() {
 						new technologies. <br /> <br /> Thank you for visiting my portfolio, enjoy the projects!
 					</p>
 
-					<div className="mt-4" onClick={scrollToContact}>
-						<Button borderRadius="1rem" className="font-bold px-8 py-4">
+					<div className="mt-4 rounded-[1rem]" onClick={scrollToContact}>
+						<Button borderRadius="1rem" className="font-bold px-8 py-4 transition-all duration-300">
 							Contact
 						</Button>
 					</div>

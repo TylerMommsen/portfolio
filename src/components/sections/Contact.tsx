@@ -19,6 +19,7 @@ export default function Contact() {
 							width={60}
 							height={60}
 							alt="github icon"
+							draggable={false}
 						/>
 					</a>
 					<a
@@ -32,6 +33,7 @@ export default function Contact() {
 							width={60}
 							height={60}
 							alt="linkedIn icon"
+							draggable={false}
 						/>
 					</a>
 					<a
@@ -45,6 +47,7 @@ export default function Contact() {
 							width={60}
 							height={60}
 							alt="gmail icon"
+							draggable={false}
 						/>
 					</a>
 				</div>

@@ -1,5 +1,5 @@
 {
-	"name": "portfolio",
+	"name": "tyler-mommsen-portflio",
 	"private": true,
 	"version": "0.1.0",
 	"scripts": {
@@ -10,6 +10,7 @@
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.0.2",
+		"@radix-ui/react-tooltip": "^1.0.7",
 		"@tsparticles/engine": "^3.2.2",
 		"@tsparticles/react": "^3.0.0",
 		"@tsparticles/slim": "^3.2.2",

@@ -81,7 +81,9 @@ export const InfiniteMovingCards = ({
 			>
 				{items.map((item, idx) => (
 					<li className="user-select-none pointer-events-none flex-shrink-0" key={item.name}>
-						<div>{item.image}</div>
+						<div draggable={false} className="user-select-none">
+							{item.image}
+						</div>
 					</li>
 				))}
 			</ul>

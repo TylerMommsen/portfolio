@@ -53,7 +53,7 @@ export default function Projects() {
 					techStack={['react', 'ts', 'sass', 'nodejs', 'express', 'mongodb']}
 					links={[
 						{ name: 'Repo', link: 'https://github.com/TylerMommsen/time-crafted' },
-						{ name: 'Live', link: 'https://tylermommsen-watchstore.netlify.app' },
+						{ name: 'Live', link: 'https://tylermommsen-watchstore.netlify.app/' },
 					]}
 					flipToLeft={true}
 				/>

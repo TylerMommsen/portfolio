@@ -103,7 +103,7 @@ export default function Hero() {
 
 	return (
 		<>
-			<section className="grid place-items-center w-screen min-h-screen">
+			<section id="home" className="grid place-items-center w-screen min-h-screen">
 				<div className="h-full w-full bg-background bg-dot-white/[0.2] relative flex items-center justify-center">
 					{/* Radial gradient for the container to give a faded look */}
 					<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -125,7 +125,7 @@ export default function Hero() {
 							</h1>
 						</div>
 
-						<div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+						<div className="user-select-none pointer-events-none rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
 							<InfiniteMovingCards
 								items={techStackIcons}
 								direction="left"
