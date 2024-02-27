@@ -30,7 +30,7 @@ export default function About() {
 					<p className="max-w-[45ch] leading-6 text-center lg:text-start">
 						Hey there! My name is Tyler Mommsen, I&apos;m a passionate Frontend Developer. My main
 						stack focuses on React/Next.js with Tailwind and TypeScript, but I always love learning
-						new technologies. <br /> <br /> Thank you for visiting my portfolio, enjoy the projects!
+						and experimenting with new technologies. <br /> <br /> Enjoy the projects!
 					</p>
 
 					<div className="mt-4 rounded-[1rem]" onClick={scrollToContact}>
