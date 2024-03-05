@@ -24,13 +24,13 @@ export default function Projects() {
 				/>
 
 				<Project
-					name="Pathfinding Visualization"
+					name="Pathfinding Visualization Tool"
 					description="Pathfinding visualization tool designed to demonstrate various pathfinding algorithms as they navigate from point A to point B. It also offers an engaging look at different maze generation algorithms and how they craft intricate mazes."
-					images={['/display-algorithm.gif']}
-					techStack={['html', 'sass', 'javascript']}
+					images={['/portfoliopathfindinggif.gif']}
+					techStack={['react', 'ts', 'sass']}
 					links={[
-						{ name: 'Repo', link: 'https://github.com/TylerMommsen/pathfinding-visualization' },
-						{ name: 'Live', link: 'https://tylermommsen.github.io/pathfinding-visualization/' },
+						{ name: 'Repo', link: 'https://github.com/TylerMommsen/pathfinding-visualizer' },
+						{ name: 'Live', link: 'https://tylermommsen-pathfinding-visualizer.vercel.app/' },
 					]}
 					flipToLeft={true}
 				/>
